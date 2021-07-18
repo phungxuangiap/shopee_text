@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href=".\asset\css\base.css">
+    <link rel="stylesheet" href=".\asset\font\fontawesome-free-5.15.3-web\css\all.min.css">
+    <link rel="stylesheet" href=".\asset\css\main.css">
+    <link rel="stylesheet" href=".\asset\css\responsive.css">
+
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobie-tablet">
+                    <ul class="nav__content ">
+                        <li class="nav__item nav__item-qr">
+                            <span> Vào cửa hàng trên ứng dụng </span>
+                            <div class="qr__bar">
+                                <img src=".\asset\img\qr.png" alt="QR Code" class="qr__img">
+                                <div class="qr__apps">
+                                    <img src=".\asset\img\appstore.png" alt="App Store">
+                                    <img src=".\asset\img\chplay.png" alt="CH Play">
+                                </div>
+                            </div>
+                        </li>
+                        <div class="separate">
+                            <li class="nav__item--separate">
+                                <span class="nav__item--no-hover nav__item--especially">Kết nối</span> 
+                                <a href="#" class="nav__icon nav__icon"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#" class="nav__icon nav__icon"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </div>
+                        
+                    </ul>
+                    <ul class="nav__content">
+                        <li class="nav__item nav__item--notifi">
+                            <a href="#">
+                                <i class="far fa-bell"></i>
+                                Thông báo
+                                <div class="header__notify-bar">
+                                    <a href="#" class="tagabonus">
+                                        <div class="notify-bar__head">
+                                            <h3>Thông Báo Mới Nhận</h3>
+                                        </div>
+                                    </a>
+                                    <div class="notifi-bar__body">
+                                        <ul class="notifi__content">
+                                            <li class="notifi__item">
+                                                <a href="#" class="item__notifi">
+                                                    <img src=".\asset\img\salee1.png" alt="" class="notifi__sale">
+                                                    <div class="notifi__title">
+                                                        <h4 class="notifi__item-big">Đơn đầu tiên giá chỉ 0Đ</h4>
+                                                        <h4 class="notifi__item-small">Nhấn vào để nhận quà của Shopee nè. Đơn hàng chào mừng bạn với giá 0Đ. Xem ngay!!</h4>
+                                                        <img src=".\asset\img\imgsale1.png" alt="" class="notifi__img-sale">
+                                                    </div>
+                                                    
+                                                </a>
+                                            </li>
+                                            <li class="notifi__item">
+                                                <a href="#" class="item__notifi">
+                                                    <img src=".\asset\img\salee2.png" alt="" class="notifi__sale">
+                                                    <div class="notifi__title">
+                                                        <h4 class="notifi__item-big">Ngày siêu giảm giá có Deal sốc 0Đ</h4>
+                                                        <h4 class="notifi__item-small">Loạt mưa Deal hấp dẫn: Voucher lên tới 50% từ shop uy tín, Flash sale 50% + Deal gốc 50%. Khuyến mãi bạt ngàn-Chớp ngay !! </h4>
+                                                        <img src=".\asset\img\imgsale2.png" alt="" class="notifi__img-sale">
+                                                    </div>
+                                                    
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a> 
+                            
+                        </li>
+                        <li class="nav__item">
+                            <a href="">
+                                <i class="far fa-question-circle"></i>
+                                Trợ giúp
+                            </a> 
+                        </li><!--
+                        <li class="nav__item nav__item--bold">Đăng nhập</li>
+                        <div class="separate">
+                            <li class="nav__item nav__item--separate nav__item--bold">Đăng kí</li>
+                        </div>-->
+                        <li class="nav__item header__user-login">
+                            <img src=".\asset\img\avata.jpg" alt="" class="header-login__img">
+                            <h4 class="header-login__name">Phùng Xuân Giáp</h4>
+                            <ul class="header-login__info">
+                                <li class="header-login__item">
+                                    <a href="#">Tài Khoản Của Tôi</a>
+                                </li>
+                                <li class="header-login__item">
+                                    <a href="#">Địa Chỉ Của Tôi</a>
+                                </li>
+                                <li class="header-login__item">
+                                    <a href="#">Đơn Mua</a>
+                                </li>
+                                <li class="header-login__item">
+                                    <a href="#">Đăng Xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search__container">
+                    <div class="mobie-search__container">
+                        <label class="nav__hidden" for="check__nav">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <!--
+                            <label class="search__hidden" for="check__search">
+                                <i class="fas fa-search"></i>
+                            </label>
+                        -->
+                    </div>
+                    <input type="checkbox" hidden id="check__nav" class="checkbox__nav">
+                    <label class="over-lay__mobie-nav" for="check__nav"">
+                        <div class="mobie-nav__container">
+                            <label for="check__nav" class="close__nav">
+                                <i class="fas fa-times"></i>
+                            </label>
+                            <div class="header-search__mobie-nav">
+                                <input type="text" placeholder="Deal Sốc Giảm 50%" >
+                                <div class="btn btn--properly btn__mobie-search">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+                            <ul class="mobie__nav">
+                                <li class="mobie__nav-item">
+                                    <a href="#">Tài Khoản Của Bạn</a>
+                                </li>
+                                <li class="mobie__nav-item">
+                                    <a href="#">Khuyến Mãi Trong Ngày</a>
+                                </li>
+                                <li class="mobie__nav-item">
+                                    <a href="#">Điều khoản, Bảo Mật</a>
+                                </li>
+                                <li class="mobie__nav-item">
+                                    <a href="#">Đăng Nhập</a>
+                                </li>
+                                <li class="mobie__nav-item">
+                                    <a href="#">Đăng Xuất</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </label>
+                    
+                    <!--
+                        <input type="checkbox"  id="check__search">
+                    -->
+                    <a class="element__icon-web hide-on-tablet" href="#">
+                        <i class="fab fa-shopify"></i>
+                    </a>
+                    <div class="element__search-bar hide-on-mobie">
+                        <div class="text__container">
+                            <input class="text" type="text" placeholder="Thương hiệu giảm đến 50%">
+                            <div class="search_history">
+                                <h3 class="heading__history">Lịch sử tìm kiếm </h3>
+                                <ul class="history__container">
+                                    <li class="history__item">
+                                        <a href="#">Sửa Tươi Tiệt trùng Không Đường</a>
+                                    </li>
+                                    <li class="history__item">
+                                        <a href="#">Cốc Đựng Sửa Tươi Tiệt trùng Không Đường</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="separate__bonus"></div>
+                        <a class="search__bonus" href="#">
+                            <div class="bonus__title">
+                                <h3>Trong Shop</h3>
+                                
+                            </div>
+                            <div class="bonus__icon">
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <div class="bonus__more">
+                                <div class="more__title">
+                                    <h3>Trong Shop</h3>
+                                </div>
+                                <div class="checked__icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="btn btn--properly search__btn" href="#">
+                            <i class="fas fa-search icon__search"></i>
+                        </a>
+                    </div>
+                    <div class="element__cart">
+                        <div class="icon-cart__wrap">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="notifi__number">3</div>
+                        </div>
+                        <!--No cart add cart__empty-->
+                        <div class="cart__container cart__ordered">
+                            <img src=".\asset\img\cartempty.png" alt="" class=" cart__img cart-empty__img">
+                            <div class="cart__text cart-empty__text">Chưa có sản phẩm</div>
+                            <div class="header-cart__ordered">
+                                <h3>Sản Phẩm Đã Thêm</h3>
+                            </div>
+                            <ul class="cart__list-order">
+                                <li class="cart__order-item">
+                                    <div class="item__order-img"><img src=".\asset\img\order1.jfif" alt="My Order" class="img-order"></div>
+                                    <div class="item__order-info">
+                                        <div class="cart__info-head">
+                                            <h5 class="cart-item__text">Cặp xách đựng Ipad, vở note tiện lợi. Cặp xách đựng Ipad, vở note tiện lợi</h5>
+                                            <div class="cart-cost__container">
+                                                <div class="cart-item__info-cost">2.500.000đ</div>
+                                                <div class="cart-item__multi">x</div>
+                                                <div class="cart-item__num">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__info-foot">
+                                            <div class="cart-item__description">Phân loại: Túi xách</div>
+                                            <div class="cart-item__delete">Xóa</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart__order-item">
+                                    <div class="item__order-img"><img src=".\asset\img\order1.jfif" alt="My Order" class="img-order"></div>
+                                    <div class="item__order-info">
+                                        <div class="cart__info-head">
+                                            <h5 class="cart-item__text">Cặp xách đựng Ipad.</h5>
+                                            <div class="cart-cost__container">
+                                                <div class="cart-item__info-cost">2.500.000đ</div>
+                                                <div class="cart-item__multi">x</div>
+                                                <div class="cart-item__num">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__info-foot">
+                                            <div class="cart-item__description">Phân loại: Túi xách</div>
+                                            <div class="cart-item__delete">Xóa</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart__order-item">
+                                    <div class="item__order-img"><img src=".\asset\img\order1.jfif" alt="My Order" class="img-order"></div>
+                                    <div class="item__order-info">
+                                        <div class="cart__info-head">
+                                            <h5 class="cart-item__text">Cặp xách đựng Ipad.</h5>
+                                            <div class="cart-cost__container">
+                                                <div class="cart-item__info-cost">2.500.000đ</div>
+                                                <div class="cart-item__multi">x</div>
+                                                <div class="cart-item__num">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__info-foot">
+                                            <div class="cart-item__description">Phân loại: Túi xách</div>
+                                            <div class="cart-item__delete">Xóa</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart__order-item">
+                                    <div class="item__order-img"><img src=".\asset\img\order1.jfif" alt="My Order" class="img-order"></div>
+                                    <div class="item__order-info">
+                                        <div class="cart__info-head">
+                                            <h5 class="cart-item__text">Cặp xách đựng Ipad, vở note tiện lợi.</h5>
+                                            <div class="cart-cost__container">
+                                                <div class="cart-item__info-cost">2.500.000đ</div>
+                                                <div class="cart-item__multi">x</div>
+                                                <div class="cart-item__num">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__info-foot">
+                                            <div class="cart-item__description">Phân loại: Túi xách</div>
+                                            <div class="cart-item__delete">Xóa</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart__order-item">
+                                    <div class="item__order-img"><img src=".\asset\img\order1.jfif" alt="My Order" class="img-order"></div>
+                                    <div class="item__order-info">
+                                        <div class="cart__info-head">
+                                            <h5 class="cart-item__text">Cặp xách đựng Ipad.</h5>
+                                            <div class="cart-cost__container">
+                                                <div class="cart-item__info-cost">2.500.000đ</div>
+                                                <div class="cart-item__multi">x</div>
+                                                <div class="cart-item__num">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__info-foot">
+                                            <div class="cart-item__description">Phân loại: Túi xách</div>
+                                            <div class="cart-item__delete">Xóa</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart__order-item">
+                                    <div class="item__order-img"><img src=".\asset\img\order1.jfif" alt="My Order" class="img-order"></div>
+                                    <div class="item__order-info">
+                                        <div class="cart__info-head">
+                                            <h5 class="cart-item__text">Cặp xách đựng Ipad.</h5>
+                                            <div class="cart-cost__container">
+                                                <div class="cart-item__info-cost">2.500.000đ</div>
+                                                <div class="cart-item__multi">x</div>
+                                                <div class="cart-item__num">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__info-foot">
+                                            <div class="cart-item__description">Phân loại: Túi xách</div>
+                                            <div class="cart-item__delete">Xóa</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart__order-item">
+                                    <div class="item__order-img"><img src=".\asset\img\order1.jfif" alt="My Order" class="img-order"></div>
+                                    <div class="item__order-info">
+                                        <div class="cart__info-head">
+                                            <h5 class="cart-item__text">Cặp xách đựng Ipad.</h5>
+                                            <div class="cart-cost__container">
+                                                <div class="cart-item__info-cost">2.500.000đ</div>
+                                                <div class="cart-item__multi">x</div>
+                                                <div class="cart-item__num">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__info-foot">
+                                            <div class="cart-item__description">Phân loại: Túi xách</div>
+                                            <div class="cart-item__delete">Xóa</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart__order-item">
+                                    <div class="item__order-img"><img src=".\asset\img\order1.jfif" alt="My Order" class="img-order"></div>
+                                    <div class="item__order-info">
+                                        <div class="cart__info-head">
+                                            <h5 class="cart-item__text">Cặp xách đựng Ipad, vở note tiện lợi.</h5>
+                                            <div class="cart-cost__container">
+                                                <div class="cart-item__info-cost">2.500.000đ</div>
+                                                <div class="cart-item__multi">x</div>
+                                                <div class="cart-item__num">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__info-foot">
+                                            <div class="cart-item__description">Phân loại: Túi xách</div>
+                                            <div class="cart-item__delete">Xóa</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cart__order-item">
+                                    <div class="item__order-img"><img src=".\asset\img\order1.jfif" alt="My Order" class="img-order"></div>
+                                    <div class="item__order-info">
+                                        <div class="cart__info-head">
+                                            <h5 class="cart-item__text">Cặp xách đựng Ipad.</h5>
+                                            <div class="cart-cost__container">
+                                                <div class="cart-item__info-cost">2.500.000đ</div>
+                                                <div class="cart-item__multi">x</div>
+                                                <div class="cart-item__num">1</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__info-foot">
+                                            <div class="cart-item__description">Phân loại: Túi xách</div>
+                                            <div class="cart-item__delete">Xóa</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="btn btn--properly btn__cart" href="#"><span>Xem Giỏ Hàng</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="header__category">
+                <li class="header-category__item header-category__item--active">
+                    <a href="#" class="header-category__item-link">
+                        Liên quan
+                    </a>
+                </li>
+                <li class="header-category__item">
+                    <a href="#" class="header-category__item-link">
+                        Mới nhất
+                    </a>
+                </li>
+                <li class="header-category__item">
+                    <a href="#" class="header-category__item-link">
+                        Bán chạy
+                    </a>
+                </li>
+                <li class="header-category__item">
+                    <a href="#" class="header-category__item-link">
+                        Giá
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div class="body grid wide">
+            <nav class="mobie__category">
+                <ul class="mobie__category-list">
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+                    <li class="mobie__category-item">
+                        <a href="" class="mobie__category-link">
+                            Dụng cụ, Thiết bị tiện ích
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="row category__container">
+                <div class="col p-2 hide-on-mobie-tablet">
+                    <div class="category__nav">
+                        <div class="category-header-first__nav">
+                            <i class="fas fa-list"></i>
+                            <h5>Danh Mục</h5>
+                        </div>
+                        <div class="category-header-second__nav">
+                            <i class="fas fa-caret-right"></i>
+                            <h5>Sản Phẩm</h5> 
+                        </div>
+                        <ul class="category-body__nav">
+                            <li class="category-nav__item">
+                                <a href="#">Áo Polo basic</a> 
+                            </li>
+                            <li class="category-nav__item">
+                                <a href="#">Áo thun Tshirst</a>
+                            </li>
+                            <li class="category-nav__item">
+                                <a href="#">Combo khuyến mãi</a>
+                            </li>
+                            <li class="category-nav__item">
+                                <a href="#">Bán chạy nhất</a>
+                            </li>
+                            <li class="category-nav__item">
+                                <a href="#">Sản phẩm mới</a>
+                            </li>
+                            <li class="category-nav__item">
+                                <a href="#">Khuyến mãi hot</a>
+                            </li>
+                            <li class="category-nav__item">
+                                <a href="#">Sale mùa hè</a>
+                            </li>
+                            <li class="category-nav__item">
+                                <a href="#">Áo Polo in</a>
+                            </li>
+                            <li class="category-nav__item">
+                                <a href="#">Tất cả sản phẩm</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col p-10 t-12 m-12">
+                    <div class="categogy__header-nav hide-on-mobie-tablet">
+                        <div class="container__cate-group1">
+                            <h5>Sắp xếp theo</h5>
+                            <a href="#" class="btn--not-hover btn--not-hover--properly">Phổ biến</a>
+                            <a href="#" class="btn--not-hover">Mới nhất</a>
+                            <a href="#" class="btn--not-hover">Bán chạy</a>
+                            <div class="categogy-header-nav__cost">
+                                Giá
+                                <i class="fas fa-chevron-down"></i>
+                                <div class="sub__cost-category">
+                                    <a href="#" class="sub__cost-category-item">Giá: Thấp đến Cao</a>
+                                    <a href="#" class="sub__cost-category-item">Giá: Cao đến Thấp</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container__cate-group2">
+                            <span class="container-header-category__num-page">
+                                <span class="item-header-category__num--especialy">1</span>/<span>17</span>
+                            </span>
+                            <div class="category-header-icon-left category-header-icon--disable">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="category-header-icon-right">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row category__content">
+                        <div class="col p-2_4 p-l-3 t-4 m-6">
+                            <a class="category__item" href="#">
+                                <div class="category__img-product" style="background-image: url(https://cf.shopee.vn/file/ccb2749a8c4f52ff0239f3e9139e5d39_tn);"></div>
+                                <div class="category-item__body" href="#">
+                                    <h5 class="category__description-item">
+                                        Áo phông áo thun Unisex form rộng cổ tròn tay lỡ....
+                                    </h5>
+                                    <div class="category__endow category__endow--sale category__endow--deal">
+                                        <div class="endow__sale">20% Giảm</div>
+                                        <div class="endow__deal">Mua Kèm Deal Sốc</div>
+                                    </div>
+                                    <div class="category__cost-item">
+                                        <div class="category-contaner__cost-item">
+                                            <h5 class="category__cost1-item">đ</h5>
+                                            <h5 class="category__cost2-item">63.300</h5>
+                                        </div>
+                                        <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg>
+                                    </div>
+                                    <div class="category__cost-evaluate">
+                                        <div class="evaluate__icon-heart">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="evaluate__icon-main">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <h5 class="evaluate__icon-main-cost">Đã bán</h5>
+                                            <h5 class="evaluate__icon-main-cost">1.6k</h5>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="category__shop-place">Hà Nội</div>
+                                </div>
+                                <div class="category__like-label">Yêu thích</div>
+                                <div class="category__sale-label">
+                                    50% 
+                                    <span>GIẢM</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-2_4 p-l-3 t-4 m-6">
+                            <a class="category__item" href="#">
+                                <div class="category__img-product" style="background-image: url(https://cf.shopee.vn/file/ccb2749a8c4f52ff0239f3e9139e5d39_tn);"></div>
+                                <div class="category-item__body" href="#">
+                                    <h5 class="category__description-item">
+                                        Áo phông áo thun Unisex form rộng cổ tròn tay lỡ....
+                                    </h5>
+                                    <div class="category__endow category__endow--sale category__endow--deal">
+                                        <div class="endow__sale">20% Giảm</div>
+                                        <div class="endow__deal">Mua Kèm Deal Sốc</div>
+                                    </div>
+                                    <div class="category__cost-item">
+                                        <div class="category-contaner__cost-item">
+                                            <h5 class="category__cost1-item">đ</h5>
+                                            <h5 class="category__cost2-item">63.300</h5>
+                                        </div>
+                                        <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg>
+                                    </div>
+                                    <div class="category__cost-evaluate">
+                                        <div class="evaluate__icon-heart">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="evaluate__icon-main">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <h5 class="evaluate__icon-main-cost">Đã bán</h5>
+                                            <h5 class="evaluate__icon-main-cost">1.6k</h5>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="category__shop-place">Hà Nội</div>
+                                </div>
+                                <div class="category__like-label">Yêu thích</div>
+                                <div class="category__sale-label">
+                                    50% 
+                                    <span>GIẢM</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-2_4 p-l-3 t-4 m-6">
+                            <a class="category__item" href="#">
+                                <div class="category__img-product" style="background-image: url(https://cf.shopee.vn/file/ccb2749a8c4f52ff0239f3e9139e5d39_tn);"></div>
+                                <div class="category-item__body" href="#">
+                                    <h5 class="category__description-item">
+                                        Áo phông áo thun Unisex form rộng cổ tròn tay lỡ....
+                                    </h5>
+                                    <div class="category__endow category__endow--sale category__endow--deal">
+                                        <div class="endow__sale">20% Giảm</div>
+                                        <div class="endow__deal">Mua Kèm Deal Sốc</div>
+                                    </div>
+                                    <div class="category__cost-item">
+                                        <div class="category-contaner__cost-item">
+                                            <h5 class="category__cost1-item">đ</h5>
+                                            <h5 class="category__cost2-item">63.300</h5>
+                                        </div>
+                                        <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg>
+                                    </div>
+                                    <div class="category__cost-evaluate">
+                                        <div class="evaluate__icon-heart">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="evaluate__icon-main">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <h5 class="evaluate__icon-main-cost">Đã bán</h5>
+                                            <h5 class="evaluate__icon-main-cost">1.6k</h5>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="category__shop-place">Hà Nội</div>
+                                </div>
+                                <div class="category__like-label">Yêu thích</div>
+                                <div class="category__sale-label">
+                                    50% 
+                                    <span>GIẢM</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-2_4 p-l-3 t-4 m-6">
+                            <a class="category__item" href="#">
+                                <div class="category__img-product" style="background-image: url(https://cf.shopee.vn/file/ccb2749a8c4f52ff0239f3e9139e5d39_tn);"></div>
+                                <div class="category-item__body" href="#">
+                                    <h5 class="category__description-item">
+                                        Áo phông áo thun Unisex form rộng cổ tròn tay lỡ....
+                                    </h5>
+                                    <div class="category__endow category__endow--sale category__endow--deal">
+                                        <div class="endow__sale">20% Giảm</div>
+                                        <div class="endow__deal">Mua Kèm Deal Sốc</div>
+                                    </div>
+                                    <div class="category__cost-item">
+                                        <div class="category-contaner__cost-item">
+                                            <h5 class="category__cost1-item">đ</h5>
+                                            <h5 class="category__cost2-item">63.300</h5>
+                                        </div>
+                                        <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg>
+                                    </div>
+                                    <div class="category__cost-evaluate">
+                                        <div class="evaluate__icon-heart">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="evaluate__icon-main">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <h5 class="evaluate__icon-main-cost">Đã bán</h5>
+                                            <h5 class="evaluate__icon-main-cost">1.6k</h5>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="category__shop-place">Hà Nội</div>
+                                </div>
+                                <div class="category__like-label">Yêu thích</div>
+                                <div class="category__sale-label">
+                                    50% 
+                                    <span>GIẢM</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-2_4 p-l-3 t-4 m-6">
+                            <a class="category__item" href="#">
+                                <div class="category__img-product" style="background-image: url(https://cf.shopee.vn/file/ccb2749a8c4f52ff0239f3e9139e5d39_tn);"></div>
+                                <div class="category-item__body" href="#">
+                                    <h5 class="category__description-item">
+                                        Áo phông áo thun Unisex form rộng cổ tròn tay lỡ....
+                                    </h5>
+                                    <div class="category__endow category__endow--sale category__endow--deal">
+                                        <div class="endow__sale">20% Giảm</div>
+                                        <div class="endow__deal">Mua Kèm Deal Sốc</div>
+                                    </div>
+                                    <div class="category__cost-item">
+                                        <div class="category-contaner__cost-item">
+                                            <h5 class="category__cost1-item">đ</h5>
+                                            <h5 class="category__cost2-item">63.300</h5>
+                                        </div>
+                                        <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg>
+                                    </div>
+                                    <div class="category__cost-evaluate">
+                                        <div class="evaluate__icon-heart">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="evaluate__icon-main">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <h5 class="evaluate__icon-main-cost">Đã bán</h5>
+                                            <h5 class="evaluate__icon-main-cost">1.6k</h5>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="category__shop-place">Hà Nội</div>
+                                </div>
+                                <div class="category__like-label">Yêu thích</div>
+                                <div class="category__sale-label">
+                                    50% 
+                                    <span>GIẢM</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-2_4 p-l-3 t-4 m-6">
+                            <a class="category__item" href="#">
+                                <div class="category__img-product" style="background-image: url(https://cf.shopee.vn/file/ccb2749a8c4f52ff0239f3e9139e5d39_tn);"></div>
+                                <div class="category-item__body" href="#">
+                                    <h5 class="category__description-item">
+                                        Áo phông áo thun Unisex form rộng cổ tròn tay lỡ....
+                                    </h5>
+                                    <div class="category__endow category__endow--sale category__endow--deal">
+                                        <div class="endow__sale">20% Giảm</div>
+                                        <div class="endow__deal">Mua Kèm Deal Sốc</div>
+                                    </div>
+                                    <div class="category__cost-item">
+                                        <div class="category-contaner__cost-item">
+                                            <h5 class="category__cost1-item">đ</h5>
+                                            <h5 class="category__cost2-item">63.300</h5>
+                                        </div>
+                                        <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg>
+                                    </div>
+                                    <div class="category__cost-evaluate">
+                                        <div class="evaluate__icon-heart">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="evaluate__icon-main">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <h5 class="evaluate__icon-main-cost">Đã bán</h5>
+                                            <h5 class="evaluate__icon-main-cost">1.6k</h5>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="category__shop-place">Hà Nội</div>
+                                </div>
+                                <div class="category__like-label">Yêu thích</div>
+                                <div class="category__sale-label">
+                                    50% 
+                                    <span>GIẢM</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-2_4 p-l-3 t-4 m-6">
+                            <a class="category__item" href="#">
+                                <div class="category__img-product" style="background-image: url(https://cf.shopee.vn/file/ccb2749a8c4f52ff0239f3e9139e5d39_tn);"></div>
+                                <div class="category-item__body" href="#">
+                                    <h5 class="category__description-item">
+                                        Áo phông áo thun Unisex form rộng cổ tròn tay lỡ....
+                                    </h5>
+                                    <div class="category__endow category__endow--sale category__endow--deal">
+                                        <div class="endow__sale">20% Giảm</div>
+                                        <div class="endow__deal">Mua Kèm Deal Sốc</div>
+                                    </div>
+                                    <div class="category__cost-item">
+                                        <div class="category-contaner__cost-item">
+                                            <h5 class="category__cost1-item">đ</h5>
+                                            <h5 class="category__cost2-item">63.300</h5>
+                                        </div>
+                                        <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg>
+                                    </div>
+                                    <div class="category__cost-evaluate">
+                                        <div class="evaluate__icon-heart">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="evaluate__icon-main">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <h5 class="evaluate__icon-main-cost">Đã bán</h5>
+                                            <h5 class="evaluate__icon-main-cost">1.6k</h5>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="category__shop-place">Hà Nội</div>
+                                </div>
+                                <div class="category__like-label">Yêu thích</div>
+                                <div class="category__sale-label">
+                                    50% 
+                                    <span>GIẢM</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-2_4 p-l-3 t-4 m-6">
+                            <a class="category__item" href="#">
+                                <div class="category__img-product" style="background-image: url(https://cf.shopee.vn/file/ccb2749a8c4f52ff0239f3e9139e5d39_tn);"></div>
+                                <div class="category-item__body" href="#">
+                                    <h5 class="category__description-item">
+                                        Áo phông áo thun Unisex form rộng cổ tròn tay lỡ....
+                                    </h5>
+                                    <div class="category__endow category__endow--sale category__endow--deal">
+                                        <div class="endow__sale">20% Giảm</div>
+                                        <div class="endow__deal">Mua Kèm Deal Sốc</div>
+                                    </div>
+                                    <div class="category__cost-item">
+                                        <div class="category-contaner__cost-item">
+                                            <h5 class="category__cost1-item">đ</h5>
+                                            <h5 class="category__cost2-item">63.300</h5>
+                                        </div>
+                                        <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg>
+                                    </div>
+                                    <div class="category__cost-evaluate">
+                                        <div class="evaluate__icon-heart">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="evaluate__icon-main">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <h5 class="evaluate__icon-main-cost">Đã bán</h5>
+                                            <h5 class="evaluate__icon-main-cost">1.6k</h5>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="category__shop-place">Hà Nội</div>
+                                </div>
+                                <div class="category__like-label">Yêu thích</div>
+                                <div class="category__sale-label">
+                                    50% 
+                                    <span>GIẢM</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-2_4 p-l-3 t-4 m-6">
+                            <a class="category__item" href="#">
+                                <div class="category__img-product" style="background-image: url(https://cf.shopee.vn/file/ccb2749a8c4f52ff0239f3e9139e5d39_tn);"></div>
+                                <div class="category-item__body" href="#">
+                                    <h5 class="category__description-item">
+                                        Áo phông áo thun Unisex form rộng cổ tròn tay lỡ....
+                                    </h5>
+                                    <div class="category__endow category__endow--sale category__endow--deal">
+                                        <div class="endow__sale">20% Giảm</div>
+                                        <div class="endow__deal">Mua Kèm Deal Sốc</div>
+                                    </div>
+                                    <div class="category__cost-item">
+                                        <div class="category-contaner__cost-item">
+                                            <h5 class="category__cost1-item">đ</h5>
+                                            <h5 class="category__cost2-item">63.300</h5>
+                                        </div>
+                                        <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg>
+                                    </div>
+                                    <div class="category__cost-evaluate">
+                                        <div class="evaluate__icon-heart">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="evaluate__icon-main">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <h5 class="evaluate__icon-main-cost">Đã bán</h5>
+                                            <h5 class="evaluate__icon-main-cost">1.6k</h5>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="category__shop-place">Hà Nội</div>
+                                </div>
+                                <div class="category__like-label">Yêu thích</div>
+                                <div class="category__sale-label">
+                                    50% 
+                                    <span>GIẢM</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-2_4 p-l-3 t-4 m-6">
+                            <a class="category__item" href="#">
+                                <div class="category__img-product" style="background-image: url(https://cf.shopee.vn/file/ccb2749a8c4f52ff0239f3e9139e5d39_tn);"></div>
+                                <div class="category-item__body" href="#">
+                                    <h5 class="category__description-item">
+                                        Áo phông áo thun Unisex form rộng cổ tròn tay lỡ....
+                                    </h5>
+                                    <div class="category__endow category__endow--sale category__endow--deal">
+                                        <div class="endow__sale">20% Giảm</div>
+                                        <div class="endow__deal">Mua Kèm Deal Sốc</div>
+                                    </div>
+                                    <div class="category__cost-item">
+                                        <div class="category-contaner__cost-item">
+                                            <h5 class="category__cost1-item">đ</h5>
+                                            <h5 class="category__cost2-item">63.300</h5>
+                                        </div>
+                                        <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg>
+                                    </div>
+                                    <div class="category__cost-evaluate">
+                                        <div class="evaluate__icon-heart">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="evaluate__icon-main">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <h5 class="evaluate__icon-main-cost">Đã bán</h5>
+                                            <h5 class="evaluate__icon-main-cost">1.6k</h5>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="category__shop-place">Hà Nội</div>
+                                </div>
+                                <div class="category__like-label">Yêu thích</div>
+                                <div class="category__sale-label">
+                                    50% 
+                                    <span>GIẢM</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-2_4 p-l-3 t-4 m-6">
+                            <a class="category__item" href="#">
+                                <div class="category__img-product" style="background-image: url(https://cf.shopee.vn/file/ccb2749a8c4f52ff0239f3e9139e5d39_tn);"></div>
+                                <div class="category-item__body" href="#">
+                                    <h5 class="category__description-item">
+                                        Áo phông áo thun Unisex form rộng cổ tròn tay lỡ....
+                                    </h5>
+                                    <div class="category__endow category__endow--sale category__endow--deal">
+                                        <div class="endow__sale">20% Giảm</div>
+                                        <div class="endow__deal">Mua Kèm Deal Sốc</div>
+                                    </div>
+                                    <div class="category__cost-item">
+                                        <div class="category-contaner__cost-item">
+                                            <h5 class="category__cost1-item">đ</h5>
+                                            <h5 class="category__cost2-item">63.300</h5>
+                                        </div>
+                                        <svg height="12" viewBox="0 0 20 12" width="20" class="shopee-svg-icon icon-free-shipping"><g fill="none" fill-rule="evenodd" transform=""><rect fill="#00bfa5" fill-rule="evenodd" height="9" rx="1" width="12" x="4"></rect><rect height="8" rx="1" stroke="#00bfa5" width="11" x="4.5" y=".5"></rect><rect fill="#00bfa5" fill-rule="evenodd" height="7" rx="1" width="7" x="13" y="2"></rect><rect height="6" rx="1" stroke="#00bfa5" width="6" x="13.5" y="2.5"></rect><circle cx="8" cy="10" fill="#00bfa5" r="2"></circle><circle cx="15" cy="10" fill="#00bfa5" r="2"></circle><path d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z" fill="#fff"></path><path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5"></path><path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5"></path><circle cx="8" cy="10" fill="#047565" r="1"></circle><circle cx="15" cy="10" fill="#047565" r="1"></circle></g></svg>
+                                    </div>
+                                    <div class="category__cost-evaluate">
+                                        <div class="evaluate__icon-heart">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="evaluate__icon-main">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <h5 class="evaluate__icon-main-cost">Đã bán</h5>
+                                            <h5 class="evaluate__icon-main-cost">1.6k</h5>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="category__shop-place">Hà Nội</div>
+                                </div>
+                                <div class="category__like-label">Yêu thích</div>
+                                <div class="category__sale-label">
+                                    50% 
+                                    <span>GIẢM</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="pagination-bar pagination-container">
+                        <li class="pagination__icon-left"><a href=""><i class="fas fa-chevron-left"></i></a></li>
+                        <li class="pagination__num-page pagination__num-page--current ">
+                            <a href="">1</a>
+                        </li>
+                        <li class="pagination__num-page">
+                            <a href="">2</a>
+                        </li>
+                        <li class="pagination__num-page">
+                            <a href="">3</a>
+                        </li>
+                        <li class="pagination__num-page">
+                            <a href="">4</a>
+                        </li>
+                        <li class="pagination__num-page">
+                            <a href="">5</a>
+                        </li>
+                        <li class="pagination__hidden-num">...</li>
+                        <li class="pagination__num-page">
+                            <a href="">14</a>
+                        </li>
+                        <li class="pagination__icon-right">
+                            <a href=""><i class="fas fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__wrap grid wide">
+                <ul class="row footer__container">
+                    <li class="col p-2_4 t-4 m-12">
+                        <h5 class="footer__item-heading">
+                            Chăm Sóc Khách Hàng
+                        </h5>
+                        <ul class="footer__item-container-list">
+                            <li class="footer__list">
+                                <a href="" class="footer__link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li class="footer__list">
+                                <a href="" class="footer__link">TickiD Mall</a>
+                            </li>
+                            <li class="footer__list">
+                                <a href="" class="footer__link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col p-2_4 t-4 m-12">
+                        <h5 class="footer__item-heading">
+                            Vé TickiD
+                        </h5>
+                        <ul class="footer__item-container-list">
+                            <li class="footer__list">
+                                <a href="" class="footer__link">Giới Thiệu Về TickiD Việt Nam</a>
+                            </li>
+                            <li class="footer__list">
+                                <a href="" class="footer__link">Tuyển Dụng</a>
+                            </li>
+                            <li class="footer__list">
+                                <a href="" class="footer__link">Điều Khoản TickiD</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col p-2_4 t-4 m-12">
+                        <h5 class="footer__item-heading">
+                            Về Shoppe
+                        </h5>
+                        <ul class="footer__item-container-list">
+                            <li class="footer__list">
+                                <a href="" class="footer__link">Tuyển Dụng</a>
+                            </li>
+                            <li class="footer__list">
+                                <a href="" class="footer__link">Điều khoản</a>
+                            </li>
+                            <li class="footer__list">
+                                <a href="" class="footer__link">Chính Sách Bảo Mật</a>
+                            </li>
+                            <li class="footer__list">
+                                <a href="" class="footer__link">Kênh Người Bán</a>
+                            </li>
+                            <li class="footer__list">
+                                <a href="" class="footer__link">Chính Hãng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col p-2_4 t-4 m-12">
+                        <h5 class="footer__item-heading">
+                            Theo Giỏi Chúng Tôi Trên
+                        </h5>
+                        <ul class="footer__item-container-list">
+                            <li class="footer__list">
+                                <a href="#" class="footer__link">
+                                    <i class="fab fa-facebook"></i>
+                                    <h5>Facebook</h5>
+                                </a>
+                            </li>
+                            
+                            <li class="footer__list">
+                                <a href="#" class="footer__link">
+                                    <i class="fab fa-instagram-square"></i>
+                                    <h5>Instagram</h5>
+                                </a>
+                            </li>
+                            <li class="footer__list">
+                                <a href="#" class="footer__link">
+                                    <i class="fab fa-youtube-square"></i>
+                                    <h5>Youtobe</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col p-2_4 t-8 m-12">
+                        <h5 class="footer__item-heading">Vào Cửa Hàng Trên Ứng Dụng Shoppee</h5>
+                        <div class="container__qr-and-social">
+                            <a class="footer__qr" href="#"><img src=".\asset\img\qr.png" alt="" width="86px"></a>
+                            <div class="footer__social">
+                                <a href="#">
+                                    <img src=".\asset\img\appstore.png" alt="" class="footer__downloadlink" width="86px">
+                                </a>
+                                <a href="#">
+                                    <img src=".\asset\img\chplay.png" alt="" class="footer__downloadlink" width="86px">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="row footer__text">
+                    <div class="col p-12 t-12 m-12">
+                        <div class="footer__text">
+                            © 2015 - Bản quyền thuộc về Công ty TNHH
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__main ">
+            <div class="register__form">
+                <div class="modal__body">
+                    <div class="modal__inner">
+                        <div class="login">
+                            <span class="login__out">Đăng kí</span>
+                            <span class="login__in">Đăng nhập</span>
+                            
+                        </div>
+                        <div class="modal__input">
+                            <input type="text" placeholder="Nhập tên người dùng" class="input__text">
+                            <input type="password" placeholder="Nhập mật khẩu" class="input__text">
+                            <input type="password" placeholder="Nhập lại mật khẩu" class="input__text">
+                        </div>
+                        <div class="sub__condition">
+                            <span>Bằng việc đăng kí tài khoản. Bạn đã chấp nhận</span>
+                            <a href="">Điều khoản dịch vụ</a>
+                            &
+                            <a href="">Chính sách bảo mật</a>
+                        </div>
+                        <div class="btn__login">
+                            <button class="btn">TRỞ LẠI</button>
+                            <button class="btn btn--properly">ĐĂNG KÍ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="social__icon">
+                    <a class="icon">
+                        <i class="fab fa-facebook-square icon__link"></i>
+                        Kết nối với Facebook
+                    </a>
+                    <a class="icon">
+                        <i class="fab fa-google icon__link"></i>
+                        Kết nối với Google
+                    </a>
+                </div>
+            </div>
+            <div class="login__form">
+                <div class="modal__body">
+                    <div class="modal__inner">
+                        <div class="login">
+                            <span class="login__out">Đăng kí</span>
+                            <span class="login__in">Đăng nhập</span>
+                            
+                        </div>
+                        <div class="modal__input">
+                            <input type="email" placeholder="Email/ Số Điện \Thoại/ Tên Đăng Nhập" class="input__text" required>
+                            <input type="password" placeholder="Mật Khẩu" class="input__text" required>
+                        </div>
+                        <div class="support__input">
+                            <a href="" class="support__input-text">Quên mật khẩu</a>
+                            <div class="support__input--separate"></div>
+                            <a href="" class="support__input-text">Cần trợ giúp?</a>
+                        </div>
+                        <div class="btn__login">
+                            <button class="btn">TRỞ LẠI</button>
+                            <button class="btn btn--properly">ĐĂNG KÍ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="social__icon">
+                    <a class="icon">
+                        <i class="fab fa-facebook-square icon__link"></i>
+                        Kết nối với Facebook
+                    </a>
+                    <a class="icon">
+                        <i class="fab fa-google icon__link"></i>
+                        Kết nối với Google
+                    </a>
+                </div>
+            </div>
+                        
+        </div>
+        
+    </div>-->
+</body>
+</html>
